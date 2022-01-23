@@ -1,10 +1,7 @@
 from flask import Flask
-
-from .views import posts as posts_view
-
+from app.routes import init_app
 def create_app():
 
-    app = Flask(__name__, static_folder=None)
-    posts_view.init_app(app)
-
+    app = Flask(__name__)
+    init_app(app)
     return app

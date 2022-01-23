@@ -1,0 +1,4 @@
+
+
+class UpdateBodyInvalidError(Exception):
+    pass
